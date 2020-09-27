@@ -23,7 +23,7 @@ done
 user_num=${#user_list[*]}
 code_num=${#user_list[*]}
 pwd_num=${#pwd_list[*]}
-if [ $user_num != $pwd_num != $code_num];then
+if [ $user_num != $pwd_num != $code_num ];then
 echo "个数不对应 用户数$user_num 密码数$pwd_num 区号数$code_num"
 exit 1
 else
@@ -31,7 +31,7 @@ echo "共有 $user_num 个账号，即将开始签到"
 fi
 for ((i=0;i<$user_num;i++))
 do
-python3 checkin.py <<EOF
+python3 sign.py <<EOF
 ${user_list[$i]}
 ${code_list[$i]}
 ${pwd_list[$i]}
