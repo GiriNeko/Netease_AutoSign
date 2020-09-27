@@ -24,3 +24,4 @@ jobs:
     - name: Working
       run: |
         pip install -r requirements.txt
+        bash bashrun.sh
