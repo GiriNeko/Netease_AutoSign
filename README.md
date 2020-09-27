@@ -19,6 +19,7 @@ Auto sign for netease music.
 - [ ] 服务器酱推送
 
 ## 灵感来自
-https://github.com/ZainCheung/netease-cloud
-https://github.com/t00t00-crypto/wyy-action
-https://github.com/Binaryify/NeteaseCloudMusicApi
+https://github.com/ZainCheung/netease-cloud 
+https://github.com/t00t00-crypto/wyy-action 
+https://github.com/Binaryify/NeteaseCloudMusicApi 
+ 
