@@ -15,8 +15,8 @@ Auto sign for netease music.
 5.star本项目，即可在actions中看到签到程序运行
 
 ## TODO
-[] 使用配置文件提取账户信息
-[] 服务器酱推送
+- [ ] 使用配置文件提取账户信息
+- [ ] 服务器酱推送
 
 ## 灵感来自
 https://github.com/ZainCheung/netease-cloud
