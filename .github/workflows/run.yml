@@ -1,0 +1,26 @@
+name: Netease_AutoSignin
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: 0 4 * * *
+  watch:
+    types: started
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: Working
+      run: |
+        pip install -r requirements.txt

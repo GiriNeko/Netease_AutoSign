@@ -1,0 +1,34 @@
+#coding:utf-8
+[main]
+
+# 是否在secret调用账户信息,适用于Action
+# 开启之后[account]部分失效
+use_secret = true
+
+[account]
+
+[api]
+
+# api地址
+url = https://api.ineko.cc/netease/
+
+#md5密码推送的参数名
+password = md5_password
+
+#登录api的调用接口(手机)
+login_phone = login/cellphone
+
+#登录api的调用接口(邮箱)
+login_email = login
+
+#登出api调用接口
+logout = logout
+
+#登陆状态调用接口
+status = login/status
+
+#登陆状态刷新接口
+refresh = login/refresh
+
+#签到调用接口
+signin = daily_signin
