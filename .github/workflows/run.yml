@@ -48,7 +48,10 @@ jobs:
         user_num=${#user_list[*]}
         code_num=${#user_list[*]}
         pwd_num=${#pwd_list[*]}
-        if [ $user_num != $pwd_num != $code_num ];then
+        if [ $user_num != $pwd_num ];then
+        echo "个数不对应 用户数$user_num 密码数$pwd_num 区号数$code_num"
+        exit 1
+        elif [ $user_num != $code_num ];then
         echo "个数不对应 用户数$user_num 密码数$pwd_num 区号数$code_num"
         exit 1
         else
