@@ -24,4 +24,9 @@ jobs:
     - name: Working
       run: |
         pip install -r requirements.txt
+        
+        user='${{ secrets.USER }}'
+        countrycode='${{ secrets.CODE }}'
+        pwd='${{ secrets.PWD }}'
+
         bash bashrun.sh
