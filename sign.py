@@ -67,7 +67,7 @@ def signin(type):
     })
     signin_json=json.loads(signin.text)
     if signin_json['code']==200:
-        print("签到成功，云贝:+" + signin_json['point'])
+        print("签到成功，云贝:+ " + signin_json['point'] )
     elif signin_json['code']==-2:
         print("你已经签到过啦")
     else:
