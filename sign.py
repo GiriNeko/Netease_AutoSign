@@ -63,7 +63,7 @@ def check():
 #签到模块 手机
 def signin(type):
     signin=s.post(url = config['api']['url'] + config['api']['signin'],data={
-        "type":type
+        "type":type,
     })
     signin_json=json.loads(signin.text)
     if signin_json['code']==200:
