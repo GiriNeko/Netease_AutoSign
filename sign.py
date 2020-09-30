@@ -60,10 +60,11 @@ def check():
         print("登出失败")
         exit(check_json['profile']['nickname'])
 
-#签到模块 手机
+#签到模块
 def signin(type):
     signin=s.post(url = config['api']['url'] + config['api']['signin'],data={
         "type":type,
+        "timestamp":1503019930000,
     })
     signin_json=json.loads(signin.text)
     if signin_json['code']==200:
