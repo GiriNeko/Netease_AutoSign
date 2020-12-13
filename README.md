@@ -3,7 +3,7 @@ Auto sign for netease music.
 本项目可以自动以移动端、桌面端的方式来为你的网易云账号签到。
 支持Github Actions运行。
 并提供了丰富的api接口模块化，你可以轻易替换为其他网易云api。
-（默认的api是我自建的，并非官方源。项目来自https://github.com/Binaryify/NeteaseCloudMusicApi）
+（默认的api是我自建的，并非官方源。项目来自https://github.com/Binaryify/NeteaseCloudMusicApi ）
 
 
 
