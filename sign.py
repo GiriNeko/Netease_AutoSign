@@ -7,7 +7,7 @@ import json
 def apitest():
     res=s.post(url=config['api']['url'] + config['api']['status'])
     res_json=json.loads(res.text)
-    if res_json['code']==200:
+    if res_json['data']['code']==200:
         print("api工作正常，发现有登陆账号：" + res_json['profile']['nickname'] + " 准备登出")
         logout=s.post(url=config['api']['url'] + config['api']['logout'])
         logout_json=json.loads(logout.text)
@@ -16,7 +16,7 @@ def apitest():
             check()
         else:
             print("api似乎出错了呢")
-            exit(logout_json['code'])
+            exit(logout_json['data']['code'])
     else:
         print("api工作正常")
 
