@@ -11,7 +11,7 @@ def apitest():
         print("api工作正常，发现有登陆账号：" + res_json['profile']['nickname'] + " 准备登出")
         logout=s.post(url=config['api']['url'] + config['api']['logout'])
         logout_json=json.loads(logout.text)
-        if logout_json['code']==200:
+        if logout_json['data']['code']==200:
             print("登出调用完毕，准备检查是否登出成功")
             check()
         else:
